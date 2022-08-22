@@ -18,17 +18,17 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
         <h1>Esercizio PHP</h1>
         <h5>
             <?php
-            $parag = "Ciao Carlo, come stai? Sto molto bene Carlo.";
+                $parag = "Ciao Carlo, come stai? Sto molto bene Carlo.";
 
-            $badword = $_GET["badword"];
-            $goodword = "***";
+                $badword = $_GET["badword"];
+                $goodword = "***";
 
-            $parag_good = str_replace($badword, $goodword, $parag);
-            $parag_len = strlen($parag_bad);
+                $parag_good = str_replace($badword, $goodword, $parag);
+                $parag_len = strlen($parag);
 
-            echo $parag_good;
-            echo "<br>";
-            echo "Lunghezza: ". $parag_len. " caratteri.";
+                echo $parag_good;
+                echo "<br>";
+                echo "Lunghezza: " . $parag_len . " caratteri.";
             ?>
         </h5>
     </body>

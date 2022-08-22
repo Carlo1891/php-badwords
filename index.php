@@ -13,8 +13,23 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BadWords</title>
     </head>
-    
+
     <body>
-        
+        <h1>Esercizio PHP</h1>
+        <h5>
+            <?php
+            $parag = "Ciao Carlo, come stai? Sto molto bene Carlo.";
+
+            $badword = $_GET["badword"];
+            $goodword = "***";
+
+            $parag_good = str_replace($badword, $goodword, $parag);
+            $parag_len = strlen($parag_bad);
+
+            echo $parag_good;
+            echo "<br>";
+            echo "Lunghezza: ". $parag_len. " caratteri.";
+            ?>
+        </h5>
     </body>
 </html>
